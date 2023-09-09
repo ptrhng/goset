@@ -176,7 +176,9 @@ func TestSetSlice(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			set := goset.From(tt.input)
-			assert.Equal(t, tt.want, set.Slice())
+			got := set.Slice()
+			sort.Strings(got)
+			assert.Equal(t, tt.want, got)
 		})
 	}
 }
