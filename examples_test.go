@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/yopeterhwang/goset"
+	"github.com/ptrhng/goset"
 )
 
 func ExampleSet_Contains() {
