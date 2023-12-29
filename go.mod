@@ -1,4 +1,4 @@
-module github.com/yopeterhwang/goset
+module github.com/ptrhng/goset
 
 go 1.18
 
